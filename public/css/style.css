@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+section#gal{
+    width:60%;
+    height:80vh;
+    background-color: #ccc;
+    border:2px dashed red; 
+    margin:15px auto; 
+    text-align: center;
+    position: relative;
+}
+section#gal .op{
+    position:absolute;
+    width:50px;
+    height:50px;
+    padding:5px;
+    background-color: #ccc;
+    border: 1px solid pink;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#gal .op:hover{
+    background-color: pink;
+    cursor: pointer;
+    border:1px solid #000;
+}
+section#gal .op:nth-child(1){ top:50%; left: 0%; }
+section#gal .op:nth-child(2){ top:50%; right: 0%; }
+
+section#gal img{
+    height: auto;
+    max-width: 100%;
+}
